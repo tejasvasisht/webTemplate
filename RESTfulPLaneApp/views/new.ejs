@@ -1,0 +1,26 @@
+<%- include("partials/header") %> 
+    
+    <div class="ui main text container segment">
+        <form class = "ui form" action="/planes" method = "POST">
+            <div class="ui huge header">New Plane</div>
+            <div class="field">
+                <label for="">Name</label>
+                <input type="text" placeholder = "Name" name = "plane[name]">
+            </div>
+            
+            <div class="field">
+                <label for="">Image</label>
+                <input type="text" placeholder = "Image URL" name = "plane[image]">
+            </div>
+            
+            <div class="field">
+                <label for="">Description</label>
+                <textarea name="plane[description]" id="" cols="30" rows="10"></textarea>
+            </div>
+            <input type="submit" class="ui big teal button basic">
+        </form>
+    </div>
+
+
+
+    <%- include("partials/footer") %> 

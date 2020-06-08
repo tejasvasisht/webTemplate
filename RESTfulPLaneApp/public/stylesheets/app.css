@@ -1,0 +1,23 @@
+h1{
+    padding-top: 1.5em;
+}
+.container.main{
+    margin-top: 7.0em;
+}
+#delete{
+    display: inline;
+}
+
+#landing-container{
+   margin-top: 10em;;
+}
+
+#animated-btn{
+    margin-left: 24em;;
+}
+#landing-header{
+    text-align: center;
+}
+#go-home{
+    display: inline;
+}

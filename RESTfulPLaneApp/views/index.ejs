@@ -1,0 +1,17 @@
+<%- include("partials/header") %> 
+    <h1>RESTful Plane App</h1>
+
+<% planes.forEach(function(plane){ %> 
+    <div class = "ui raised very padded text container segment">
+        <h1 class = "ui header"><%= plane.name %> </h1>
+        <img class = "ui medium rounded image" src="<%= plane.image %> " alt="">
+        <p><%= plane.description %> </p>
+        <a class = "ui basic button blue" href="/planes/<%= plane._id %>" >Read More</a>
+    </div>
+    
+<% }); %> 
+
+
+
+
+<%- include("partials/footer") %> 

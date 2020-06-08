@@ -1,0 +1,18 @@
+<%- include("partials/header") %> 
+<div class = "ui text container main segment">
+    <div class="ui huge header"><%= plane.name%></div>
+    <img src="<%= plane.image %> " alt="" class="ui rounded image medium">
+    <div class="ui description">
+        <p class = "ui "><%= plane.description %> </p>
+        <a class = "ui button basic blue"href="/planes/<%= plane._id %>/edit ">Edit</a>
+        <form id="delete" action="/planes/<%= plane._id %>?_method=DELETE" method="POST">
+            <button id = "delete" class="ui blue basic button">Delete</button>
+        </form>
+        <a id ="go-home" class = "ui button basic blue" href="/planes">Go Home</a>
+    </div>
+    
+    
+</div>
+
+
+<%- include("partials/footer") %> 
